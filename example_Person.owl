@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#studies">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Module"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#staff_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#staff_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Lecturer"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#std_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#std_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Student"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CSmodule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CSmodule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Mathmodule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Mathmodule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CSmodule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CSmodule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#lecturer01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#lecturer01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Lecturer"/>
+        <staff_id rdf:datatype="&xsd;integer">0001</staff_id>
+        <last_name rdf:datatype="&xsd;string">Akram</last_name>
+        <first_name rdf:datatype="&xsd;string">Zubair</first_name>
+        <teaches rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS101"/>
+        <teaches rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math101"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#lecturer02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#lecturer02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Lecturer"/>
+        <staff_id rdf:datatype="&xsd;integer">0002</staff_id>
+        <last_name rdf:datatype="&xsd;string">Khan</last_name>
+        <first_name rdf:datatype="&xsd;string">Yasmin</first_name>
+        <teaches rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS101"/>
+        <teaches rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math101"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Mathmodule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Mathmodule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#std01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#std01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Student"/>
+        <std_id rdf:datatype="&xsd;integer">0003</std_id>
+        <first_name rdf:datatype="&xsd;string">Hero</first_name>
+        <last_name rdf:datatype="&xsd;string">Meara</last_name>
+        <studies rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS101"/>
+        <studies rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math101"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#std02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#std02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#Student"/>
+        <std_id rdf:datatype="&xsd;integer">0004</std_id>
+        <last_name rdf:datatype="&xsd;string">Hassan</last_name>
+        <first_name rdf:datatype="&xsd;string">Saima</first_name>
+        <studies rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS101"/>
+        <studies rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#CS102"/>
+        <studies rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-6#math102"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
