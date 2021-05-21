@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-12"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-12">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#Controbutors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Developer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SRS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#approve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#change"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#create"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_change"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_changeApproved_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_changeDone_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_changeProposed_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_change_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_change_title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRS_title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SRSchange_request"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#changeIn_SRS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#change_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#change_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#change_reason"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#customer_approvedChange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#customer_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#customer_proposedChange_details"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#customer_proposedChange_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#developer_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#first_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#last_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pm_approvedSRS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pm_approvedSRS_changes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pm_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#proposedChange_date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#approvedChange_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#createSRS_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cust01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#devloper01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pm01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proposedChange_01"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <Class IRI="#Controbutors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Developer"/>
+        <Class IRI="#Controbutors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectManager"/>
+        <Class IRI="#Controbutors"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Customer"/>
+        <Class IRI="#Developer"/>
+        <Class IRI="#ProjectManager"/>
+        <Class IRI="#SRS"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ProjectManager"/>
+        <NamedIndividual IRI="#approvedChange_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Developer"/>
+        <NamedIndividual IRI="#createSRS_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#cust01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Developer"/>
+        <NamedIndividual IRI="#devloper01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectManager"/>
+        <NamedIndividual IRI="#pm01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#proposedChange_01"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#change"/>
+        <NamedIndividual IRI="#cust01"/>
+        <NamedIndividual IRI="#proposedChange_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#create"/>
+        <NamedIndividual IRI="#devloper01"/>
+        <NamedIndividual IRI="#createSRS_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#approve"/>
+        <NamedIndividual IRI="#pm01"/>
+        <NamedIndividual IRI="#approvedChange_01"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_change"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer"> 01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_changeApproved_by"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Zubair</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_changeDone_by"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Saif Rehman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_changeProposed_by"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Rehan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_change_id"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">5010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_change_title"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Customer want UI in light colors </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_id"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">0011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRS_title"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">daraz.pk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRSchange_request"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Change UI Color</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#change_date"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;dateTime">8-February-2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#change_description"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">The suggested light blue color will be added to the UI in order to eliminate the dark colors in UI.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#change_reason"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">The UI f the website seem less attractive with dark colors.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#customer_approvedChange"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#customer_id"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#customer_proposedChange_details"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Add the light color in UI such as light blue to make website attractive for a user.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#customer_proposedChange_id"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#developer_id"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#first_name"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Rehan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#last_name"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;string">Khan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pm_approvedSRS"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">0011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pm_approvedSRS_changes"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pm_id"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#proposedChange_date"/>
+        <NamedIndividual IRI="#cust01"/>
+        <Literal datatypeIRI="&xsd;dateTime">05-February-2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SRSchange_request"/>
+        <NamedIndividual IRI="#devloper01"/>
+        <Literal datatypeIRI="&xsd;string">Change UI Color</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#changeIn_SRS"/>
+        <NamedIndividual IRI="#devloper01"/>
+        <Literal datatypeIRI="&xsd;string">daraz.pk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#developer_id"/>
+        <NamedIndividual IRI="#devloper01"/>
+        <Literal datatypeIRI="&xsd;integer">010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#first_name"/>
+        <NamedIndividual IRI="#devloper01"/>
+        <Literal datatypeIRI="&xsd;string">Saif</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#last_name"/>
+        <NamedIndividual IRI="#devloper01"/>
+        <Literal datatypeIRI="&xsd;string">Rehaman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#first_name"/>
+        <NamedIndividual IRI="#pm01"/>
+        <Literal datatypeIRI="&xsd;string">Zubair</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#last_name"/>
+        <NamedIndividual IRI="#pm01"/>
+        <Literal datatypeIRI="&xsd;string">Akram</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pm_approvedSRS"/>
+        <NamedIndividual IRI="#pm01"/>
+        <Literal datatypeIRI="&xsd;integer">0011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pm_approvedSRS_changes"/>
+        <NamedIndividual IRI="#pm01"/>
+        <Literal datatypeIRI="&xsd;integer">01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pm_id"/>
+        <NamedIndividual IRI="#pm01"/>
+        <Literal datatypeIRI="&xsd;integer">100</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#approve"/>
+        <Class IRI="#ProjectManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#change"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#create"/>
+        <Class IRI="#Developer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#approve"/>
+        <Class IRI="#SRS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#change"/>
+        <Class IRI="#SRS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#create"/>
+        <Class IRI="#SRS"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_change"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_changeApproved_by"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_changeApproved_by"/>
+        <Class IRI="#ProjectManager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_changeDone_by"/>
+        <Class IRI="#Developer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_changeProposed_by"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_changeProposed_by"/>
+        <Class IRI="#Developer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_changeProposed_by"/>
+        <Class IRI="#ProjectManager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_change_id"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_change_title"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_id"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRS_title"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SRSchange_request"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#changeIn_SRS"/>
+        <Class IRI="#Developer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#change_date"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#change_description"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#change_reason"/>
+        <Class IRI="#SRS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#customer_approvedChange"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#customer_id"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#customer_proposedChange_details"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#customer_proposedChange_id"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#developer_id"/>
+        <Class IRI="#Developer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#first_name"/>
+        <Class IRI="#Controbutors"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#last_name"/>
+        <Class IRI="#Controbutors"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pm_approvedSRS"/>
+        <Class IRI="#ProjectManager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pm_approvedSRS_changes"/>
+        <Class IRI="#ProjectManager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pm_id"/>
+        <Class IRI="#ProjectManager"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#proposedChange_date"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_change"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_changeApproved_by"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_changeDone_by"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_changeProposed_by"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_change_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_change_title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRS_title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SRSchange_request"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#changeIn_SRS"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#change_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#change_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#change_reason"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#customer_approvedChange"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#customer_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#customer_proposedChange_details"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#customer_proposedChange_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#developer_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#first_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#last_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pm_approvedSRS"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pm_approvedSRS_changes"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pm_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#proposedChange_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
