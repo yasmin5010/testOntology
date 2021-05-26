@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/yasmin5010/testOntology/srs_ontology.owl#"
+     xml:base="https://github.com/yasmin5010/testOntology/srs_ontology.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:srs_ontology="https://github.com/yasmin5010/testOntology/srs_ontology.owl#">
+    <owl:Ontology rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#approve -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#approve">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        <rdfs:range rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#generate -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#generate">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+        <rdfs:range rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#propose -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#propose">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <rdfs:range rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ApprovedChange -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ApprovedChange">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_Id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_Id">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedChange_Date -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedChange_Date">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedChange_Details -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedChange_Details">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedSRS -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedSRS">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer_id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer_id">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#fname -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#fname">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#lname -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#lname">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS_Change -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS_Change">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS_Change_Date -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS_Change_Date">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_Id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_Id">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ApprovedBy -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ApprovedBy">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeApprovedBy -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeApprovedBy">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeDate -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeDate">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeDescription">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeId -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeId">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeMade_Date -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeMade_Date">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeProposedBy -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeProposedBy">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeReason -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeReason">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeRequest_Id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeRequest_Id">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Id">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ProposedBy -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ProposedBy">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Title -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Title">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_changeDoneBy -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_changeDoneBy">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_generatedBy -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_generatedBy">
+        <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors -->
+
+    <owl:Class rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer -->
+
+    <owl:Class rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer">
+        <rdfs:subClassOf rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer -->
+
+    <owl:Class rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer">
+        <rdfs:subClassOf rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager -->
+
+    <owl:Class rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager">
+        <rdfs:subClassOf rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS -->
+
+    <owl:Class rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer01 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer01">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <propose rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer01"/>
+        <cust_ApprovedChange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contact form change accepted...</cust_ApprovedChange>
+        <cust_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cust_Id>
+        <cust_ProposedChange_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/Feb/2020</cust_ProposedChange_Date>
+        <cust_ProposedChange_Details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change the contact form layout</cust_ProposedChange_Details>
+        <cust_ProposedSRS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eshopping</cust_ProposedSRS>
+        <fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ishtiaq</fname>
+        <lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed</lname>
+        <srs_ChangeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The layout seem confusing for the user</srs_ChangeReason>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer02 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer02">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <propose rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer02"/>
+        <cust_ApprovedChange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Login form change accepted...</cust_ApprovedChange>
+        <cust_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</cust_Id>
+        <cust_ProposedChange_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23/3/2021</cust_ProposedChange_Date>
+        <cust_ProposedChange_Details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change the Log in for button</cust_ProposedChange_Details>
+        <cust_ProposedSRS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecommerce GlamCosmetics</cust_ProposedSRS>
+        <fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdur</fname>
+        <lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rehman</lname>
+        <srs_ChangeReason rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The button in login form is not looking attractive</srs_ChangeReason>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer01 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer01">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+        <generate rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer01"/>
+        <developer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</developer_id>
+        <fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muuhammad</fname>
+        <lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saif</lname>
+        <srs_ChangeMade_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">28-3-2021</srs_ChangeMade_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer02 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer02">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+        <generate rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer02"/>
+        <developer_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</developer_id>
+        <fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad</fname>
+        <lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shariq</lname>
+        <srs_ChangeMade_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">12-Feb-2020</srs_ChangeMade_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm01 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm01">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        <approve rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm01"/>
+        <fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zubair</fname>
+        <lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akram</lname>
+        <pm_ApprovedSRS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eshopping</pm_ApprovedSRS>
+        <pm_ApprovedSRS_Change rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change the contect form layout</pm_ApprovedSRS_Change>
+        <pm_ApprovedSRS_Change_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">6/Feb/2020</pm_ApprovedSRS_Change_Date>
+        <pm_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0011</pm_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm02 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm02">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        <approve rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm02"/>
+        <fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad</fname>
+        <lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khan</lname>
+        <pm_ApprovedSRS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecommerce GlamCosmetics</pm_ApprovedSRS>
+        <pm_ApprovedSRS_Change rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change in a login form</pm_ApprovedSRS_Change>
+        <pm_ApprovedSRS_Change_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">24/3/2021</pm_ApprovedSRS_Change_Date>
+        <pm_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0022</pm_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs01 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs01">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <srs_ApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ishtaiq Ahmed</srs_ApprovedBy>
+        <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">6/Feb/2020</srs_ChangeApprovedBy>
+        <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zubair Akram</srs_ChangeApprovedBy>
+        <srs_ChangeId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</srs_ChangeId>
+        <srs_ChangeProposedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ishtaq Ahmed</srs_ChangeProposedBy>
+        <srs_ChangeProposedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ishtiaq Ahmed</srs_ChangeProposedBy>
+        <srs_ChangeRequest_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01</srs_ChangeRequest_Id>
+        <srs_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1010</srs_Id>
+        <srs_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eshopping</srs_Title>
+        <srs_generatedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad Saif</srs_generatedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs02 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs02">
+        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <srs_ApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdur Rehman</srs_ApprovedBy>
+        <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">24/3/2010</srs_ChangeApprovedBy>
+        <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad Khan</srs_ChangeApprovedBy>
+        <srs_ChangeId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</srs_ChangeId>
+        <srs_ChangeProposedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdur Rehman</srs_ChangeProposedBy>
+        <srs_ChangeRequest_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</srs_ChangeRequest_Id>
+        <srs_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</srs_Title>
+        <srs_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecommerce GlamCosmetics</srs_Title>
+        <srs_generatedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad Shariq</srs_generatedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+            <rdf:Description rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+            <rdf:Description rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
