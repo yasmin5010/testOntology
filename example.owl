@@ -1,0 +1,340 @@
+@prefix : <https://github.com/yasmin5010/testOntology/srs_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix srs_ontology: <https://github.com/yasmin5010/testOntology/srs_ontology.owl#> .
+@base <https://github.com/yasmin5010/testOntology/srs_ontology.owl> .
+
+<https://github.com/yasmin5010/testOntology/srs_ontology.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#approve
+srs_ontology:approve rdf:type owl:ObjectProperty ;
+                     rdfs:domain srs_ontology:ProjectManager ;
+                     rdfs:range srs_ontology:SRS .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#generate
+srs_ontology:generate rdf:type owl:ObjectProperty ;
+                      rdfs:domain srs_ontology:Developer ;
+                      rdfs:range srs_ontology:SRS .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#propose
+srs_ontology:propose rdf:type owl:ObjectProperty ;
+                     rdfs:domain srs_ontology:Customer ;
+                     rdfs:range srs_ontology:SRS .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ApprovedChange
+srs_ontology:cust_ApprovedChange rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain srs_ontology:Customer ;
+                                 rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_Id
+srs_ontology:cust_Id rdf:type owl:DatatypeProperty ;
+                     rdfs:domain srs_ontology:Customer ;
+                     rdfs:range xsd:integer .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedChange_Date
+srs_ontology:cust_ProposedChange_Date rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain srs_ontology:Customer ;
+                                      rdfs:range xsd:dateTime .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedChange_Details
+srs_ontology:cust_ProposedChange_Details rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain srs_ontology:Customer ;
+                                         rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#cust_ProposedSRS
+srs_ontology:cust_ProposedSRS rdf:type owl:DatatypeProperty ;
+                              rdfs:domain srs_ontology:Customer ;
+                              rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer_id
+srs_ontology:developer_id rdf:type owl:DatatypeProperty ;
+                          rdfs:domain srs_ontology:Developer ;
+                          rdfs:range xsd:integer .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#fname
+srs_ontology:fname rdf:type owl:DatatypeProperty ;
+                   rdfs:domain srs_ontology:Contributors ;
+                   rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#lname
+srs_ontology:lname rdf:type owl:DatatypeProperty ;
+                   rdfs:domain srs_ontology:Contributors ;
+                   rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS
+srs_ontology:pm_ApprovedSRS rdf:type owl:DatatypeProperty ;
+                            rdfs:domain srs_ontology:ProjectManager ;
+                            rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS_Change
+srs_ontology:pm_ApprovedSRS_Change rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain srs_ontology:ProjectManager ;
+                                   rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_ApprovedSRS_Change_Date
+srs_ontology:pm_ApprovedSRS_Change_Date rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain srs_ontology:ProjectManager ;
+                                        rdfs:range xsd:dateTime .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm_Id
+srs_ontology:pm_Id rdf:type owl:DatatypeProperty ;
+                   rdfs:domain srs_ontology:ProjectManager ;
+                   rdfs:range xsd:integer .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ApprovedBy
+srs_ontology:srs_ApprovedBy rdf:type owl:DatatypeProperty ;
+                            rdfs:domain srs_ontology:SRS ;
+                            rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeApprovedBy
+srs_ontology:srs_ChangeApprovedBy rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain srs_ontology:SRS ;
+                                  rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeDate
+srs_ontology:srs_ChangeDate rdf:type owl:DatatypeProperty ;
+                            rdfs:domain srs_ontology:SRS ;
+                            rdfs:range xsd:dateTime .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeDescription
+srs_ontology:srs_ChangeDescription rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain srs_ontology:SRS ;
+                                   rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeId
+srs_ontology:srs_ChangeId rdf:type owl:DatatypeProperty ;
+                          rdfs:domain srs_ontology:Developer ,
+                                      srs_ontology:SRS ;
+                          rdfs:range xsd:integer .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeMade_Date
+srs_ontology:srs_ChangeMade_Date rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain srs_ontology:Developer ;
+                                 rdfs:range xsd:dateTime .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeProposedBy
+srs_ontology:srs_ChangeProposedBy rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain srs_ontology:SRS ;
+                                  rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeReason
+srs_ontology:srs_ChangeReason rdf:type owl:DatatypeProperty ;
+                              rdfs:domain srs_ontology:SRS ;
+                              rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ChangeRequest_Id
+srs_ontology:srs_ChangeRequest_Id rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain srs_ontology:Developer ,
+                                              srs_ontology:SRS ;
+                                  rdfs:range xsd:integer .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Id
+srs_ontology:srs_Id rdf:type owl:DatatypeProperty ;
+                    rdfs:domain srs_ontology:SRS ;
+                    rdfs:range xsd:integer .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_ProposedBy
+srs_ontology:srs_ProposedBy rdf:type owl:DatatypeProperty ;
+                            rdfs:domain srs_ontology:SRS ;
+                            rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Title
+srs_ontology:srs_Title rdf:type owl:DatatypeProperty ;
+                       rdfs:domain srs_ontology:SRS ;
+                       rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_changeDoneBy
+srs_ontology:srs_changeDoneBy rdf:type owl:DatatypeProperty ;
+                              rdfs:domain srs_ontology:SRS ;
+                              rdfs:range xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_generatedBy
+srs_ontology:srs_generatedBy rdf:type owl:DatatypeProperty ;
+                             rdfs:domain srs_ontology:SRS ;
+                             rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors
+srs_ontology:Contributors rdf:type owl:Class .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer
+srs_ontology:Customer rdf:type owl:Class ;
+                      rdfs:subClassOf srs_ontology:Contributors .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer
+srs_ontology:Developer rdf:type owl:Class ;
+                       rdfs:subClassOf srs_ontology:Contributors .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager
+srs_ontology:ProjectManager rdf:type owl:Class ;
+                            rdfs:subClassOf srs_ontology:Contributors .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS
+srs_ontology:SRS rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer01
+srs_ontology:customer01 rdf:type owl:NamedIndividual ,
+                                 srs_ontology:Customer ;
+                        srs_ontology:propose srs_ontology:customer01 ;
+                        srs_ontology:cust_ApprovedChange "Contact form change accepted..."^^xsd:string ;
+                        srs_ontology:cust_Id 10 ;
+                        srs_ontology:cust_ProposedChange_Date "5/Feb/2020"^^xsd:string ;
+                        srs_ontology:cust_ProposedChange_Details "Change the contact form layout"^^xsd:string ;
+                        srs_ontology:cust_ProposedSRS "eshopping"^^xsd:string ;
+                        srs_ontology:fname "Ishtiaq"^^xsd:string ;
+                        srs_ontology:lname "Ahmed"^^xsd:string ;
+                        srs_ontology:srs_ChangeReason "The layout seem confusing for the user"^^xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer02
+srs_ontology:customer02 rdf:type owl:NamedIndividual ,
+                                 srs_ontology:Customer ;
+                        srs_ontology:propose srs_ontology:customer02 ;
+                        srs_ontology:cust_ApprovedChange "Login form change accepted..."^^xsd:string ;
+                        srs_ontology:cust_Id 20 ;
+                        srs_ontology:cust_ProposedChange_Date "23/3/2021"^^xsd:string ;
+                        srs_ontology:cust_ProposedChange_Details "Change the Log in for button"^^xsd:string ;
+                        srs_ontology:cust_ProposedSRS "ecommerce GlamCosmetics"^^xsd:string ;
+                        srs_ontology:fname "Abdur"^^xsd:string ;
+                        srs_ontology:lname "Rehman"^^xsd:string ;
+                        srs_ontology:srs_ChangeReason "The button in login form is not looking attractive"^^xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer01
+srs_ontology:developer01 rdf:type owl:NamedIndividual ,
+                                  srs_ontology:Developer ;
+                         srs_ontology:generate srs_ontology:developer01 ;
+                         srs_ontology:developer_id 001 ;
+                         srs_ontology:fname "Muuhammad"^^xsd:string ;
+                         srs_ontology:lname "Saif"^^xsd:string ;
+                         srs_ontology:srs_ChangeMade_Date "28-3-2021"^^xsd:dateTime .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#developer02
+srs_ontology:developer02 rdf:type owl:NamedIndividual ,
+                                  srs_ontology:Developer ;
+                         srs_ontology:generate srs_ontology:developer02 ;
+                         srs_ontology:developer_id 002 ;
+                         srs_ontology:fname "Muhammad"^^xsd:string ;
+                         srs_ontology:lname "Shariq"^^xsd:string ;
+                         srs_ontology:srs_ChangeMade_Date "12-Feb-2020"^^xsd:dateTime .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm01
+srs_ontology:pm01 rdf:type owl:NamedIndividual ,
+                           srs_ontology:ProjectManager ;
+                  srs_ontology:approve srs_ontology:pm01 ;
+                  srs_ontology:fname "Zubair"^^xsd:string ;
+                  srs_ontology:lname "Akram"^^xsd:string ;
+                  srs_ontology:pm_ApprovedSRS "eshopping"^^xsd:string ;
+                  srs_ontology:pm_ApprovedSRS_Change "Change the contect form layout"^^xsd:string ;
+                  srs_ontology:pm_ApprovedSRS_Change_Date "6/Feb/2020"^^xsd:dateTime ;
+                  srs_ontology:pm_Id 0011 .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#pm02
+srs_ontology:pm02 rdf:type owl:NamedIndividual ,
+                           srs_ontology:ProjectManager ;
+                  srs_ontology:approve srs_ontology:pm02 ;
+                  srs_ontology:fname "Muhammad"^^xsd:string ;
+                  srs_ontology:lname "Khan"^^xsd:string ;
+                  srs_ontology:pm_ApprovedSRS "ecommerce GlamCosmetics"^^xsd:string ;
+                  srs_ontology:pm_ApprovedSRS_Change "Change in a login form"^^xsd:string ;
+                  srs_ontology:pm_ApprovedSRS_Change_Date "24/3/2021"^^xsd:dateTime ;
+                  srs_ontology:pm_Id 0022 .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs01
+srs_ontology:srs01 rdf:type owl:NamedIndividual ,
+                            srs_ontology:SRS ;
+                   srs_ontology:srs_ApprovedBy "Ishtaiq Ahmed"^^xsd:string ;
+                   srs_ontology:srs_ChangeApprovedBy "6/Feb/2020"^^xsd:dateTime ,
+                                                     "Zubair Akram"^^xsd:string ;
+                   srs_ontology:srs_ChangeId 01 ;
+                   srs_ontology:srs_ChangeProposedBy "Ishtaq Ahmed"^^xsd:string ,
+                                                     "Ishtiaq Ahmed"^^xsd:string ;
+                   srs_ontology:srs_ChangeRequest_Id 01 ;
+                   srs_ontology:srs_Id 1010 ;
+                   srs_ontology:srs_Title "eshopping"^^xsd:string ;
+                   srs_ontology:srs_generatedBy "Muhammad Saif"^^xsd:string .
+
+
+###  https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs02
+srs_ontology:srs02 rdf:type owl:NamedIndividual ,
+                            srs_ontology:SRS ;
+                   srs_ontology:srs_ApprovedBy "Abdur Rehman"^^xsd:string ;
+                   srs_ontology:srs_ChangeApprovedBy "24/3/2010"^^xsd:dateTime ,
+                                                     "Muhammad Khan"^^xsd:string ;
+                   srs_ontology:srs_ChangeId 02 ;
+                   srs_ontology:srs_ChangeProposedBy "Abdur Rehman"^^xsd:string ;
+                   srs_ontology:srs_ChangeRequest_Id 02 ;
+                   srs_ontology:srs_Title 2020 ,
+                                          "ecommerce GlamCosmetics"^^xsd:string ;
+                   srs_ontology:srs_generatedBy "Muhammad Shariq"^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( srs_ontology:Customer
+                srs_ontology:Developer
+                srs_ontology:ProjectManager
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
