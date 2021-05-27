@@ -49,6 +49,43 @@
                 <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
             </owl:Restriction>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#has_Title -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#has_Title">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#has_Title"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Title"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -371,6 +408,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer01">
         <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
+        <hasName rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer01"/>
         <propose rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#customer01"/>
         <cust_ApprovedChange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contact form change accepted...</cust_ApprovedChange>
         <cust_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</cust_Id>
