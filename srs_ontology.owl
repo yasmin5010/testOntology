@@ -46,25 +46,31 @@
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Customer"/>
             </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
+        </rdfs:domain>
+        <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Developer"/>
             </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
+        </rdfs:domain>
+        <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#ProjectManager"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#fname"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#lname"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
