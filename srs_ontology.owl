@@ -40,6 +40,19 @@
     
 
 
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#propose -->
 
     <owl:ObjectProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#propose">
