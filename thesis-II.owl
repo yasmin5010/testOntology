@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#change_apprvedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#change_apprvedby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#ProjectManager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#change_doneby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#change_doneby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#change_proposeby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#change_proposeby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#has_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#has_a"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_approvedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_approvedby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#ProjectManager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_changedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_changedby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_createdby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_createdby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_proposedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#is_proposedby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ApprovedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ApprovedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeDoneBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeDoneBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeReason -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ChangeReason">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_CreatedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_CreatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_Id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ProposedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_ProposedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_Title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_changeApprovedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_changeApprovedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_changeProposedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_changeProposedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Contributors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Contributors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Contributors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#ProjectManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Developer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Contributors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#ProjectManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#ProjectManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#ProjectManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Contributors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#customer_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#customer_01"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#customer_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#customer_02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#developer_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#developer_01"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#developer_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#developer_02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#pm_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#pm_01"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#pm_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#pm_02"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#srs_01">
+        <srs_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</srs_Id>
+        <srs_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daraz.pk</srs_Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Customer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#Developer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kirikiri/ontologies/2021/4/untitled-ontology-4#SRS"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
