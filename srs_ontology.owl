@@ -49,8 +49,8 @@
         <rdfs:domain rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#has"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs_Title"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
@@ -75,6 +75,27 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#contributor_Designation -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#contributor_Designation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#has"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#Contributors"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#contributor_Designation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -605,7 +626,12 @@
     <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs01 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs01">
-        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#has"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+            </owl:Restriction>
+        </rdf:type>
         <srs_ApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ishtaiq Ahmed</srs_ApprovedBy>
         <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">6/Feb/2020</srs_ChangeApprovedBy>
         <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zubair Akram</srs_ChangeApprovedBy>
@@ -623,14 +649,19 @@
     <!-- https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs02 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/yasmin5010/testOntology/srs_ontology.owl#srs02">
-        <rdf:type rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#has"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/yasmin5010/testOntology/srs_ontology.owl#SRS"/>
+            </owl:Restriction>
+        </rdf:type>
         <srs_ApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdur Rehman</srs_ApprovedBy>
         <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">24/3/2010</srs_ChangeApprovedBy>
         <srs_ChangeApprovedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad Khan</srs_ChangeApprovedBy>
         <srs_ChangeId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</srs_ChangeId>
         <srs_ChangeProposedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abdur Rehman</srs_ChangeProposedBy>
         <srs_ChangeRequest_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</srs_ChangeRequest_Id>
-        <srs_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</srs_Title>
+        <srs_Id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02</srs_Id>
         <srs_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecommerce GlamCosmetics</srs_Title>
         <srs_generatedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad Shariq</srs_generatedBy>
     </owl:NamedIndividual>
