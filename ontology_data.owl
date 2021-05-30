@@ -10,14 +10,14 @@
 ]>
 
 
-<rdf:RDF xmlns="https://github.com/yasmin5010/testOntology/ontology_data.owl#"
-     xml:base="https://github.com/yasmin5010/testOntology/ontology_data.owl"
+<rdf:RDF xmlns="https://github.com/yasmin5010/testOntology/blob/master/ontology_data.owl#"
+     xml:base="https://github.com/yasmin5010/testOntology/blob/master/ontology_data.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ontology_data="https://github.com/yasmin5010/testOntology/ontology_data.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="https://github.com/yasmin5010/testOntology/ontology_data.owl"/>
+    <owl:Ontology rdf:about="https://github.com/yasmin5010/testOntology/blob/master/ontology_data.owl"/>
     
 
 
@@ -268,13 +268,14 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;cust01">
         <rdf:type rdf:resource="&ontology_data;customer"/>
-        <change_proposeDate rdf:datatype="&xsd;dateTime">2020-03-10</change_proposeDate>
-        <last_name rdf:datatype="&xsd;string">Ahmed</last_name>
-        <change_reason rdf:datatype="&xsd;string">Change layout of billing page</change_reason>
-        <cust_propose_srs rdf:datatype="&xsd;string">Eshopping</cust_propose_srs>
-        <first_name rdf:datatype="&xsd;string">Ishtiaq</first_name>
-        <srsChange_proposedBy rdf:datatype="&xsd;string">Ishtiaq Ahmed</srsChange_proposedBy>
-        <c_designation rdf:datatype="&xsd;string">customer</c_designation>
+        <ontology_data:change_proposeDate rdf:datatype="&xsd;dateTime">2020-03-10</ontology_data:change_proposeDate>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Ahmed</ontology_data:last_name>
+        <ontology_data:change_reason rdf:datatype="&xsd;string">Change layout of billing page</ontology_data:change_reason>
+        <ontology_data:cust_propose_srs rdf:datatype="&xsd;string">Eshopping</ontology_data:cust_propose_srs>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Ishtiaq</ontology_data:first_name>
+        <ontology_data:srsChange_proposedBy rdf:datatype="&xsd;string">Ishtiaq Ahmed</ontology_data:srsChange_proposedBy>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">customer</ontology_data:c_designation>
+        <ontology_data:propose rdf:resource="&ontology_data;cust01"/>
     </owl:NamedIndividual>
     
 
@@ -283,13 +284,14 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;cust02">
         <rdf:type rdf:resource="&ontology_data;customer"/>
-        <change_proposeDate rdf:datatype="&xsd;dateTime">2020-07-14</change_proposeDate>
-        <first_name rdf:datatype="&xsd;string">Abdur</first_name>
-        <srsChange_proposedBy rdf:datatype="&xsd;string">Abdur Rehman</srsChange_proposedBy>
-        <change_reason rdf:datatype="&xsd;string">Change design of login page</change_reason>
-        <last_name rdf:datatype="&xsd;string">Rehman</last_name>
-        <c_designation rdf:datatype="&xsd;string">customer</c_designation>
-        <cust_propose_srs rdf:datatype="&xsd;string">daraz.pk</cust_propose_srs>
+        <ontology_data:change_proposeDate rdf:datatype="&xsd;dateTime">2020-07-14</ontology_data:change_proposeDate>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Abdur</ontology_data:first_name>
+        <ontology_data:srsChange_proposedBy rdf:datatype="&xsd;string">Abdur Rehman</ontology_data:srsChange_proposedBy>
+        <ontology_data:change_reason rdf:datatype="&xsd;string">Change design of login page</ontology_data:change_reason>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Rehman</ontology_data:last_name>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">customer</ontology_data:c_designation>
+        <ontology_data:cust_propose_srs rdf:datatype="&xsd;string">daraz.pk</ontology_data:cust_propose_srs>
+        <ontology_data:propose rdf:resource="&ontology_data;cust02"/>
     </owl:NamedIndividual>
     
 
@@ -298,12 +300,13 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;dev01">
         <rdf:type rdf:resource="&ontology_data;developer"/>
-        <change_madeDate rdf:datatype="&xsd;dateTime">2020-03-15</change_madeDate>
-        <c_designation rdf:datatype="&xsd;string">Developer</c_designation>
-        <dev_generate_srs rdf:datatype="&xsd;string">Eshopping</dev_generate_srs>
-        <last_name rdf:datatype="&xsd;string">Rehman</last_name>
-        <first_name rdf:datatype="&xsd;string">Saif</first_name>
-        <srsChange_doneBy rdf:datatype="&xsd;string">Saif Rehman</srsChange_doneBy>
+        <ontology_data:change_madeDate rdf:datatype="&xsd;dateTime">2020-03-15</ontology_data:change_madeDate>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Developer</ontology_data:c_designation>
+        <ontology_data:dev_generate_srs rdf:datatype="&xsd;string">Eshopping</ontology_data:dev_generate_srs>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Rehman</ontology_data:last_name>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Saif</ontology_data:first_name>
+        <ontology_data:srsChange_doneBy rdf:datatype="&xsd;string">Saif Rehman</ontology_data:srsChange_doneBy>
+        <ontology_data:generate rdf:resource="&ontology_data;dev01"/>
     </owl:NamedIndividual>
     
 
@@ -312,12 +315,13 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;dev02">
         <rdf:type rdf:resource="&ontology_data;developer"/>
-        <change_madeDate rdf:datatype="&xsd;dateTime">2020-07-21</change_madeDate>
-        <c_designation rdf:datatype="&xsd;string">Developer</c_designation>
-        <first_name rdf:datatype="&xsd;string">Muhammad</first_name>
-        <srsChange_doneBy rdf:datatype="&xsd;string">Muhammad Shariq</srsChange_doneBy>
-        <last_name rdf:datatype="&xsd;string">Shariq</last_name>
-        <dev_generate_srs rdf:datatype="&xsd;string">daraz.pk</dev_generate_srs>
+        <ontology_data:change_madeDate rdf:datatype="&xsd;dateTime">2020-07-21</ontology_data:change_madeDate>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Developer</ontology_data:c_designation>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Muhammad</ontology_data:first_name>
+        <ontology_data:srsChange_doneBy rdf:datatype="&xsd;string">Muhammad Shariq</ontology_data:srsChange_doneBy>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Shariq</ontology_data:last_name>
+        <ontology_data:dev_generate_srs rdf:datatype="&xsd;string">daraz.pk</ontology_data:dev_generate_srs>
+        <ontology_data:generate rdf:resource="&ontology_data;dev02"/>
     </owl:NamedIndividual>
     
 
@@ -326,12 +330,13 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;pm01">
         <rdf:type rdf:resource="&ontology_data;projectManager"/>
-        <change_approveDate rdf:datatype="&xsd;dateTime">2020-03-12</change_approveDate>
-        <first_name rdf:datatype="&xsd;string">Irfan</first_name>
-        <srsChange_approveBy rdf:datatype="&xsd;string">Irfan Khan</srsChange_approveBy>
-        <last_name rdf:datatype="&xsd;string">Khan</last_name>
-        <c_designation rdf:datatype="&xsd;string">Project Manager</c_designation>
-        <pm_approve_srs rdf:datatype="&xsd;string">daraz.pk</pm_approve_srs>
+        <ontology_data:change_approveDate rdf:datatype="&xsd;dateTime">2020-03-12</ontology_data:change_approveDate>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Irfan</ontology_data:first_name>
+        <ontology_data:srsChange_approveBy rdf:datatype="&xsd;string">Irfan Khan</ontology_data:srsChange_approveBy>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Khan</ontology_data:last_name>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Project Manager</ontology_data:c_designation>
+        <ontology_data:pm_approve_srs rdf:datatype="&xsd;string">daraz.pk</ontology_data:pm_approve_srs>
+        <ontology_data:approve rdf:resource="&ontology_data;pm01"/>
     </owl:NamedIndividual>
     
 
@@ -340,12 +345,12 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;pm02">
         <rdf:type rdf:resource="&ontology_data;projectManager"/>
-        <change_approveDate rdf:datatype="&xsd;dateTime">2020-07-16</change_approveDate>
-        <last_name rdf:datatype="&xsd;string">Akram</last_name>
-        <pm_approve_srs rdf:datatype="&xsd;string">Eshopping</pm_approve_srs>
-        <c_designation rdf:datatype="&xsd;string">Project Manager</c_designation>
-        <first_name rdf:datatype="&xsd;string">Zubair</first_name>
-        <srsChange_approveBy rdf:datatype="&xsd;string">Zubair Akram</srsChange_approveBy>
+        <ontology_data:change_approveDate rdf:datatype="&xsd;dateTime">2020-07-16</ontology_data:change_approveDate>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Akram</ontology_data:last_name>
+        <ontology_data:pm_approve_srs rdf:datatype="&xsd;string">Eshopping</ontology_data:pm_approve_srs>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Project Manager</ontology_data:c_designation>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Zubair</ontology_data:first_name>
+        <ontology_data:srsChange_approveBy rdf:datatype="&xsd;string">Zubair Akram</ontology_data:srsChange_approveBy>
     </owl:NamedIndividual>
     
 
@@ -354,8 +359,8 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;srs01">
         <rdf:type rdf:resource="&ontology_data;srs"/>
-        <change_id rdf:datatype="&xsd;integer">010</change_id>
-        <srs_title rdf:datatype="&xsd;string">Eshpping</srs_title>
+        <ontology_data:change_id rdf:datatype="&xsd;integer">010</ontology_data:change_id>
+        <ontology_data:srs_title rdf:datatype="&xsd;string">Eshpping</ontology_data:srs_title>
     </owl:NamedIndividual>
     
 
@@ -364,8 +369,8 @@
 
     <owl:NamedIndividual rdf:about="&ontology_data;srs02">
         <rdf:type rdf:resource="&ontology_data;srs"/>
-        <change_id rdf:datatype="&xsd;integer">020</change_id>
-        <srs_title rdf:datatype="&xsd;string">daraz.pk</srs_title>
+        <ontology_data:change_id rdf:datatype="&xsd;integer">020</ontology_data:change_id>
+        <ontology_data:srs_title rdf:datatype="&xsd;string">daraz.pk</ontology_data:srs_title>
     </owl:NamedIndividual>
     
 
