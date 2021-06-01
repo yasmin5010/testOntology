@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ont "http://www.co-ode.org/ontologies/ont.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY prov_pm "http://www.co-ode.org/ontologies/ont.owl#prov_pm:" >
+    <!ENTITY prov_cust "http://www.co-ode.org/ontologies/ont.owl#prov_cust:" >
+    <!ENTITY prov_developer "http://www.co-ode.org/ontologies/ont.owl#prov_developer:" >
+    <!ENTITY ontology_data "https://github.com/yasmin5010/testOntology/ontology_data.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology_data="https://github.com/yasmin5010/testOntology/ontology_data.owl#"
+     xmlns:prov_developer="&ont;prov_developer:"
+     xmlns:prov_cust="&ont;prov_cust:"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:prov_pm="&ont;prov_pm:">
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#prov_cust:wasAttributedTo -->
+
+    <ObjectProperty rdf:about="&ont;prov_cust:wasAttributedTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&ontology_data;customer"/>
+        <rdfs:range rdf:resource="&ontology_data;srs"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#prov_developer:wasAttributedTo -->
+
+    <ObjectProperty rdf:about="&ont;prov_developer:wasAttributedTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&ontology_data;developer"/>
+        <rdfs:range rdf:resource="&ontology_data;srs"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#prov_pm:wasAttributedTo -->
+
+    <ObjectProperty rdf:about="&ont;prov_pm:wasAttributedTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&ontology_data;projectManager"/>
+        <rdfs:range rdf:resource="&ontology_data;srs"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#developer_contribution -->
+
+    <DatatypeProperty rdf:about="&ont;developer_contribution">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;developer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#firstChange_approveBy -->
+
+    <DatatypeProperty rdf:about="&ont;firstChange_approveBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;projectManager"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#srs_final_verson -->
+
+    <DatatypeProperty rdf:about="&ont;srs_final_verson">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;projectManager"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#srs_firstChange -->
+
+    <DatatypeProperty rdf:about="&ont;srs_firstChange">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&ontology_data;projectManager"/>
+        <rdfs:domain rdf:resource="&ontology_data;srs"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#c_designation -->
+
+    <DatatypeProperty rdf:about="&ontology_data;c_designation">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;contributors"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#change_approveDate -->
+
+    <DatatypeProperty rdf:about="&ontology_data;change_approveDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&ontology_data;projectManager"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#change_id -->
+
+    <DatatypeProperty rdf:about="&ontology_data;change_id">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:domain rdf:resource="&ontology_data;developer"/>
+        <rdfs:domain rdf:resource="&ontology_data;srs"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#change_madeDate -->
+
+    <DatatypeProperty rdf:about="&ontology_data;change_madeDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&ontology_data;developer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#change_proposeDate -->
+
+    <DatatypeProperty rdf:about="&ontology_data;change_proposeDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&ontology_data;customer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#change_reason -->
+
+    <DatatypeProperty rdf:about="&ontology_data;change_reason">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;srs"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#cust_propose_srs -->
+
+    <DatatypeProperty rdf:about="&ontology_data;cust_propose_srs">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;customer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#dev_generate_srs -->
+
+    <DatatypeProperty rdf:about="&ontology_data;dev_generate_srs">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;developer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#first_name -->
+
+    <DatatypeProperty rdf:about="&ontology_data;first_name">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;contributors"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#last_name -->
+
+    <DatatypeProperty rdf:about="&ontology_data;last_name">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;contributors"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#pm_approve_srs -->
+
+    <DatatypeProperty rdf:about="&ontology_data;pm_approve_srs">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;projectManager"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#srsChange_approveBy -->
+
+    <DatatypeProperty rdf:about="&ontology_data;srsChange_approveBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;projectManager"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#srsChange_doneBy -->
+
+    <DatatypeProperty rdf:about="&ontology_data;srsChange_doneBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;developer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#srsChange_proposedBy -->
+
+    <DatatypeProperty rdf:about="&ontology_data;srsChange_proposedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;customer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#srs_title -->
+
+    <DatatypeProperty rdf:about="&ontology_data;srs_title">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ontology_data;srs"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#contributors -->
+
+    <Class rdf:about="&ontology_data;contributors"/>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#customer -->
+
+    <Class rdf:about="&ontology_data;customer">
+        <rdfs:subClassOf rdf:resource="&ontology_data;contributors"/>
+    </Class>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#developer -->
+
+    <Class rdf:about="&ontology_data;developer">
+        <rdfs:subClassOf rdf:resource="&ontology_data;contributors"/>
+    </Class>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#projectManager -->
+
+    <Class rdf:about="&ontology_data;projectManager">
+        <rdfs:subClassOf rdf:resource="&ontology_data;contributors"/>
+    </Class>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#srs -->
+
+    <Class rdf:about="&ontology_data;srs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#cust01 -->
+
+    <NamedIndividual rdf:about="&ontology_data;cust01">
+        <rdf:type rdf:resource="&ontology_data;customer"/>
+        <ontology_data:change_proposeDate rdf:datatype="&xsd;dateTime">2020-03-10</ontology_data:change_proposeDate>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Ahmed</ontology_data:last_name>
+        <ontology_data:change_reason rdf:datatype="&xsd;string">Change layout of billing page</ontology_data:change_reason>
+        <ontology_data:cust_propose_srs rdf:datatype="&xsd;string">Eshopping</ontology_data:cust_propose_srs>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Ishtiaq</ontology_data:first_name>
+        <ontology_data:srsChange_proposedBy rdf:datatype="&xsd;string">Ishtiaq Ahmed</ontology_data:srsChange_proposedBy>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">customer</ontology_data:c_designation>
+        <prov_cust:wasAttributedTo rdf:resource="&ontology_data;cust01"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#cust02 -->
+
+    <NamedIndividual rdf:about="&ontology_data;cust02">
+        <rdf:type rdf:resource="&ontology_data;customer"/>
+        <ontology_data:change_proposeDate rdf:datatype="&xsd;dateTime">2020-07-14</ontology_data:change_proposeDate>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Abdur</ontology_data:first_name>
+        <ontology_data:srsChange_proposedBy rdf:datatype="&xsd;string">Abdur Rehman</ontology_data:srsChange_proposedBy>
+        <ontology_data:change_reason rdf:datatype="&xsd;string">Change design of login page</ontology_data:change_reason>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Rehman</ontology_data:last_name>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">customer</ontology_data:c_designation>
+        <ontology_data:cust_propose_srs rdf:datatype="&xsd;string">daraz.pk</ontology_data:cust_propose_srs>
+        <prov_cust:wasAttributedTo rdf:resource="&ontology_data;cust02"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#dev01 -->
+
+    <NamedIndividual rdf:about="&ontology_data;dev01">
+        <rdf:type rdf:resource="&ontology_data;developer"/>
+        <ontology_data:change_madeDate rdf:datatype="&xsd;dateTime">2020-03-15</ontology_data:change_madeDate>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Developer</ontology_data:c_designation>
+        <ontology_data:dev_generate_srs rdf:datatype="&xsd;string">Eshopping</ontology_data:dev_generate_srs>
+        <ont:developer_contribution rdf:datatype="&xsd;string">Model Database</ont:developer_contribution>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Rehman</ontology_data:last_name>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Saif</ontology_data:first_name>
+        <ontology_data:srsChange_doneBy rdf:datatype="&xsd;string">Saif Rehman</ontology_data:srsChange_doneBy>
+        <ont:developer_contribution rdf:datatype="&xsd;string">created user panel &amp;a admin panel</ont:developer_contribution>
+        <prov_developer:wasAttributedTo rdf:resource="&ontology_data;dev01"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#dev02 -->
+
+    <NamedIndividual rdf:about="&ontology_data;dev02">
+        <rdf:type rdf:resource="&ontology_data;developer"/>
+        <ontology_data:change_madeDate rdf:datatype="&xsd;dateTime">2020-07-21</ontology_data:change_madeDate>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Developer</ontology_data:c_designation>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Muhammad</ontology_data:first_name>
+        <ontology_data:srsChange_doneBy rdf:datatype="&xsd;string">Muhammad Shariq</ontology_data:srsChange_doneBy>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Shariq</ontology_data:last_name>
+        <ontology_data:dev_generate_srs rdf:datatype="&xsd;string">daraz.pk</ontology_data:dev_generate_srs>
+        <prov_developer:wasAttributedTo rdf:resource="&ontology_data;dev02"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#pm01 -->
+
+    <NamedIndividual rdf:about="&ontology_data;pm01">
+        <rdf:type rdf:resource="&ontology_data;projectManager"/>
+        <ontology_data:change_approveDate rdf:datatype="&xsd;dateTime">2020-03-12</ontology_data:change_approveDate>
+        <ont:srs_firstChange rdf:datatype="&xsd;dateTime">2020-3-11</ont:srs_firstChange>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Irfan</ontology_data:first_name>
+        <ont:firstChange_approveBy rdf:datatype="&xsd;dateTime">Irfan Khan</ont:firstChange_approveBy>
+        <ontology_data:srsChange_approveBy rdf:datatype="&xsd;string">Irfan Khan</ontology_data:srsChange_approveBy>
+        <ont:srs_final_verson rdf:datatype="&xsd;string">Irfan khan</ont:srs_final_verson>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Khan</ontology_data:last_name>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Project Manager</ontology_data:c_designation>
+        <ontology_data:pm_approve_srs rdf:datatype="&xsd;string">daraz.pk</ontology_data:pm_approve_srs>
+        <prov_pm:wasAttributedTo rdf:resource="&ontology_data;pm01"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#pm02 -->
+
+    <NamedIndividual rdf:about="&ontology_data;pm02">
+        <rdf:type rdf:resource="&ontology_data;projectManager"/>
+        <ontology_data:change_approveDate rdf:datatype="&xsd;dateTime">2020-07-16</ontology_data:change_approveDate>
+        <ontology_data:last_name rdf:datatype="&xsd;string">Akram</ontology_data:last_name>
+        <ontology_data:pm_approve_srs rdf:datatype="&xsd;string">Eshopping</ontology_data:pm_approve_srs>
+        <ontology_data:c_designation rdf:datatype="&xsd;string">Project Manager</ontology_data:c_designation>
+        <ontology_data:first_name rdf:datatype="&xsd;string">Zubair</ontology_data:first_name>
+        <ontology_data:srsChange_approveBy rdf:datatype="&xsd;string">Zubair Akram</ontology_data:srsChange_approveBy>
+        <prov_pm:wasAttributedTo rdf:resource="&ontology_data;pm02"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#srs01 -->
+
+    <NamedIndividual rdf:about="&ontology_data;srs01">
+        <rdf:type rdf:resource="&ontology_data;srs"/>
+        <ont:srs_firstChange rdf:datatype="&xsd;dateTime">&quot;2021-03-23&quot;</ont:srs_firstChange>
+        <ontology_data:change_id rdf:datatype="&xsd;integer">010</ontology_data:change_id>
+        <ontology_data:srs_title rdf:datatype="&xsd;string">Eshpping</ontology_data:srs_title>
+        <prov_cust:wasAttributedTo rdf:resource="&ontology_data;srs01"/>
+        <prov_pm:wasAttributedTo rdf:resource="&ontology_data;srs01"/>
+        <prov_developer:wasAttributedTo rdf:resource="&ontology_data;srs01"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://github.com/yasmin5010/testOntology/ontology_data.owl#srs02 -->
+
+    <NamedIndividual rdf:about="&ontology_data;srs02">
+        <rdf:type rdf:resource="&ontology_data;srs"/>
+        <ontology_data:change_id rdf:datatype="&xsd;integer">020</ontology_data:change_id>
+        <ontology_data:srs_title rdf:datatype="&xsd;string">daraz.pk</ontology_data:srs_title>
+        <prov_cust:wasAttributedTo rdf:resource="&ontology_data;srs02"/>
+        <prov_developer:wasAttributedTo rdf:resource="&ontology_data;srs02"/>
+        <prov_pm:wasAttributedTo rdf:resource="&ontology_data;srs02"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontology_data;customer"/>
+            <rdf:Description rdf:about="&ontology_data;developer"/>
+            <rdf:Description rdf:about="&ontology_data;projectManager"/>
+            <rdf:Description rdf:about="&ontology_data;srs"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
