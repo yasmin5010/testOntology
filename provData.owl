@@ -127,7 +127,7 @@
     <owl:DatatypeProperty rdf:about="&provData;changeReason">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-        <rdfs:domain rdf:resource="&provData;customer"/>
+        <rdfs:domain rdf:resource="&provData;developer"/>
     </owl:DatatypeProperty>
     
 
@@ -394,11 +394,14 @@
         <changeMadeDate rdf:datatype="&xsd;dateTime">2020-10-26</changeMadeDate>
         <changeMadeByDeveloper rdf:datatype="&xsd;string">2: Add table</changeMadeByDeveloper>
         <changeMadeByDeveloper rdf:datatype="&xsd;string">3: Adding log0</changeMadeByDeveloper>
+        <changeReason rdf:datatype="&xsd;string">Customer demand for the addition of career tab in website.</changeReason>
         <designation rdf:datatype="&xsd;string">Developer</designation>
         <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
         <srs_Title rdf:datatype="&xsd;string">Glam Furnniture</srs_Title>
+        <changeReason rdf:datatype="&xsd;string">Logo was in dark color so the customer want to change it.</changeReason>
         <firstName rdf:datatype="&xsd;string">Rana</firstName>
         <lastName rdf:datatype="&xsd;string">Tahir</lastName>
+        <changeReason rdf:datatype="&xsd;string">The customer demand table of about us page.</changeReason>
         <developer_wasAttributedTo rdf:resource="&provData;developer01"/>
     </owl:NamedIndividual>
     
