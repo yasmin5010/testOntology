@@ -35,6 +35,7 @@
     <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#cust_wasAttributedTo -->
 
     <owl:ObjectProperty rdf:about="&provData;cust_wasAttributedTo">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:domain rdf:resource="&provData;customer"/>
         <rdfs:range rdf:resource="&provData;srs"/>
     </owl:ObjectProperty>
@@ -53,6 +54,7 @@
     <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm_wasAttributedTo -->
 
     <owl:ObjectProperty rdf:about="&provData;pm_wasAttributedTo">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:domain rdf:resource="&provData;projectManager"/>
         <rdfs:range rdf:resource="&provData;srs"/>
     </owl:ObjectProperty>
@@ -266,8 +268,7 @@
     <owl:DatatypeProperty rdf:about="&provData;srs_Title">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-        <rdfs:domain rdf:resource="&provData;developer"/>
-        <rdfs:domain rdf:resource="&provData;srs"/>
+        <rdfs:domain rdf:resource="&provData;contributors"/>
     </owl:DatatypeProperty>
     
 
@@ -339,6 +340,7 @@
         <lastName rdf:datatype="&xsd;string">Ambreen</lastName>
         <firstName rdf:datatype="&xsd;string">Komal</firstName>
         <custProposeSRS rdf:datatype="&xsd;string">Nisa Cosmetics</custProposeSRS>
+        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
         <designation rdf:datatype="&xsd;string">customer</designation>
         <cust_wasAttributedTo rdf:resource="&provData;customer01"/>
     </owl:NamedIndividual>
@@ -349,9 +351,14 @@
 
     <owl:NamedIndividual rdf:about="&provData;customer02">
         <rdf:type rdf:resource="&provData;customer"/>
+        <customerproposedChange rdf:datatype="&xsd;string">1: Add Career Tab</customerproposedChange>
         <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-10-23</customerProposedChangeDate>
-        <customerproposedChange rdf:datatype="&xsd;string">Add Career Tab</customerproposedChange>
+        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-11-01</customerProposedChangeDate>
+        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-11-04 </customerProposedChangeDate>
+        <customerproposedChange rdf:datatype="&xsd;string">2: Add the career tab an form </customerproposedChange>
+        <customerproposedChange rdf:datatype="&xsd;string">3: Include the sidebar in website.</customerproposedChange>
         <firstName rdf:datatype="&xsd;string">Alina</firstName>
+        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
         <custProposeSRS rdf:datatype="&xsd;string">Glam Furniture</custProposeSRS>
         <designation rdf:datatype="&xsd;string">customer</designation>
         <lastName rdf:datatype="&xsd;string">fatima</lastName>
@@ -381,12 +388,14 @@
 
     <owl:NamedIndividual rdf:about="&provData;developer01">
         <rdf:type rdf:resource="&provData;developer"/>
-        <changeId rdf:datatype="&xsd;integer">1</changeId>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">1: Add career Tab</changeMadeByDeveloper>
         <changeId rdf:datatype="&xsd;integer">2</changeId>
         <changeMadeDate rdf:datatype="&xsd;dateTime">2020-10-25</changeMadeDate>
-        <changeId rdf:datatype="&xsd;integer">3</changeId>
-        <changeMadeByDeveloper rdf:datatype="&xsd;string">Add career Tab</changeMadeByDeveloper>
+        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-10-26</changeMadeDate>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">2: Add table</changeMadeByDeveloper>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">3: Adding log0</changeMadeByDeveloper>
         <designation rdf:datatype="&xsd;string">Developer</designation>
+        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
         <srs_Title rdf:datatype="&xsd;string">Glam Furnniture</srs_Title>
         <firstName rdf:datatype="&xsd;string">Rana</firstName>
         <lastName rdf:datatype="&xsd;string">Tahir</lastName>
@@ -402,6 +411,7 @@
         <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2020-10-24</pmApprovedSRSChangeDate>
         <pmApprovedSRSChange rdf:datatype="&xsd;string">Add career Tab</pmApprovedSRSChange>
         <firstName rdf:datatype="&xsd;string">Aqib</firstName>
+        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
         <pmApprovedSRS rdf:datatype="&xsd;string">Glam Furniture</pmApprovedSRS>
         <designation rdf:datatype="&xsd;string">Project Manager</designation>
         <lastName rdf:datatype="&xsd;string">mehmood</lastName>
@@ -417,6 +427,7 @@
         <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2021-10-5</pmApprovedSRSChangeDate>
         <pmApprovedSRSChange rdf:datatype="&xsd;string">Add feedback form</pmApprovedSRSChange>
         <firstName rdf:datatype="&xsd;string">Junaid</firstName>
+        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
         <pmApprovedSRS rdf:datatype="&xsd;string">Nisa Cosmetics</pmApprovedSRS>
         <designation rdf:datatype="&xsd;string">Project Manager</designation>
         <lastName rdf:datatype="&xsd;string">ali</lastName>
