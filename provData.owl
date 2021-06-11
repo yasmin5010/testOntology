@@ -132,6 +132,16 @@
     
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#custApproveSRS -->
+
+    <owl:DatatypeProperty rdf:about="&provData;custApproveSRS">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;customer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#custProposeSRS -->
 
     <owl:DatatypeProperty rdf:about="&provData;custProposeSRS">
