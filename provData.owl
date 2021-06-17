@@ -1,488 +1,442 @@
-@prefix : <https://github.com/yasmin5010/testOntology/blob/master/provData.owl#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix provData: <https://github.com/yasmin5010/testOntology/blob/master/provData.owl#> .
-@base <https://github.com/yasmin5010/testOntology/blob/master/provData.owl> .
+<?xml version="1.0"?>
 
-<https://github.com/yasmin5010/testOntology/blob/master/provData.owl> rdf:type owl:Ontology .
 
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY provData "https://github.com/yasmin5010/testOntology/blob/master/provData.owl#" >
+]>
 
-#################################################################
-#
-#    Object Properties
-#
-#################################################################
 
+<rdf:RDF xmlns="https://github.com/yasmin5010/testOntology/blob/master/provData.owl#"
+     xml:base="https://github.com/yasmin5010/testOntology/blob/master/provData.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:provData="https://github.com/yasmin5010/testOntology/blob/master/provData.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="https://github.com/yasmin5010/testOntology/blob/master/provData.owl"/>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#cust_wasAttributedTo
 
-:cust_wasAttributedTo rdf:type owl:ObjectProperty ;
-                      
-                      rdfs:domain :customer ;
-                      
-                      rdfs:range :srs .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
 
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developer_wasAttributedTo
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#cust_wasAttributedTo -->
 
-:developer_wasAttributedTo rdf:type owl:FunctionalProperty ,
-                                    owl:ObjectProperty ;
-                           
-                           rdfs:domain :developer ;
-                           
-                           rdfs:range :srs .
+    <owl:ObjectProperty rdf:about="&provData;cust_wasAttributedTo">
+        <rdfs:domain rdf:resource="&provData;customer"/>
+        <rdfs:range rdf:resource="&provData;srs"/>
+    </owl:ObjectProperty>
+    
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developer_wasAttributedTo -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm_wasAttributedTo
+    <owl:ObjectProperty rdf:about="&provData;developer_wasAttributedTo">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&provData;developer"/>
+        <rdfs:range rdf:resource="&provData;srs"/>
+    </owl:ObjectProperty>
+    
 
-:pm_wasAttributedTo rdf:type owl:FunctionalProperty ,
-                             owl:ObjectProperty ;
-                    
-                    rdfs:domain :projectManager ;
-                    
-                    rdfs:range :srs .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm_wasAttributedTo -->
 
+    <owl:ObjectProperty rdf:about="&provData;pm_wasAttributedTo">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&provData;projectManager"/>
+        <rdfs:range rdf:resource="&provData;srs"/>
+    </owl:ObjectProperty>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#was_GeneratedBy
 
-:was_GeneratedBy rdf:type owl:FunctionalProperty ,
-                          owl:ObjectProperty ;
-                 
-                 rdfs:range :contributors ;
-                 
-                 rdfs:domain :srs .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#was_GeneratedBy -->
 
+    <owl:ObjectProperty rdf:about="&provData;was_GeneratedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&provData;contributors"/>
+        <rdfs:domain rdf:resource="&provData;srs"/>
+    </owl:ObjectProperty>
+    
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
 
-#################################################################
-#
-#    Data properties
-#
-#################################################################
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeMadeByDeveloper -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeMadeByDeveloper
+    <owl:DatatypeProperty rdf:about="&provData;changeMadeByDeveloper">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;developer"/>
+    </owl:DatatypeProperty>
+    
 
-:changeMadeByDeveloper rdf:type owl:DatatypeProperty ,
-                                owl:FunctionalProperty ;
-                       
-                       rdfs:range xsd:string ;
-                       
-                       rdfs:domain :developer .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeMadeDate -->
 
+    <owl:DatatypeProperty rdf:about="&provData;changeMadeDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&provData;developer"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeMadeDate
 
-:changeMadeDate rdf:type owl:DatatypeProperty ,
-                         owl:FunctionalProperty ;
-                
-                rdfs:range xsd:dateTime ;
-                
-                rdfs:domain :developer .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeProposeDate -->
 
+    <owl:DatatypeProperty rdf:about="&provData;changeProposeDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&provData;customer"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeProposeDate
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeReason -->
 
-:changeProposeDate rdf:type owl:DatatypeProperty ,
-                            owl:FunctionalProperty ;
-                   
-                   rdfs:range xsd:dateTime ;
-                   
-                   rdfs:domain :customer .
+    <owl:DatatypeProperty rdf:about="&provData;changeReason">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;developer"/>
+    </owl:DatatypeProperty>
+    
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#custApproveSRS -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeReason
+    <owl:DatatypeProperty rdf:about="&provData;custApproveSRS">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;customer"/>
+    </owl:DatatypeProperty>
+    
 
-:changeReason rdf:type owl:DatatypeProperty ,
-                       owl:FunctionalProperty ;
-              
-              rdfs:range xsd:string ;
-              
-              rdfs:domain :developer .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#custProposeSRS -->
 
+    <owl:DatatypeProperty rdf:about="&provData;custProposeSRS">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;customer"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#custApproveSRS
 
-:custApproveSRS rdf:type owl:DatatypeProperty ,
-                         owl:FunctionalProperty ;
-                
-                rdfs:range xsd:string ;
-                
-                rdfs:domain :customer .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customerProposedChangeDate -->
 
+    <owl:DatatypeProperty rdf:about="&provData;customerProposedChangeDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&provData;customer"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#custProposeSRS
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customerproposedChange -->
 
-:custProposeSRS rdf:type owl:DatatypeProperty ,
-                         owl:FunctionalProperty ;
-                
-                rdfs:range xsd:string ;
-                
-                rdfs:domain :customer .
+    <owl:DatatypeProperty rdf:about="&provData;customerproposedChange">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;customer"/>
+    </owl:DatatypeProperty>
+    
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#designation -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customerProposedChangeDate
+    <owl:DatatypeProperty rdf:about="&provData;designation">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;contributors"/>
+    </owl:DatatypeProperty>
+    
 
-:customerProposedChangeDate rdf:type owl:DatatypeProperty ,
-                                     owl:FunctionalProperty ;
-                            
-                            rdfs:range xsd:dateTime ;
-                            
-                            rdfs:domain :customer .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developerGeneratedSRS -->
 
+    <owl:DatatypeProperty rdf:about="&provData;developerGeneratedSRS">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;developer"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customerproposedChange
 
-:customerproposedChange rdf:type owl:DatatypeProperty ,
-                                 owl:FunctionalProperty ;
-                        
-                        rdfs:range xsd:string ;
-                        
-                        rdfs:domain :customer .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#firstName -->
 
+    <owl:DatatypeProperty rdf:about="&provData;firstName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;contributors"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#designation
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#lastName -->
 
-:designation rdf:type owl:DatatypeProperty ,
-                      owl:FunctionalProperty ;
-             
-             rdfs:range xsd:string ;
-             
-             rdfs:domain :contributors .
+    <owl:DatatypeProperty rdf:about="&provData;lastName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;contributors"/>
+    </owl:DatatypeProperty>
+    
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pmApprovedSRS -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developerGeneratedSRS
+    <owl:DatatypeProperty rdf:about="&provData;pmApprovedSRS">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;projectManager"/>
+    </owl:DatatypeProperty>
+    
 
-:developerGeneratedSRS rdf:type owl:DatatypeProperty ,
-                                owl:FunctionalProperty ;
-                       
-                       rdfs:range xsd:string ;
-                       
-                       rdfs:domain :developer .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pmApprovedSRSChange -->
 
+    <owl:DatatypeProperty rdf:about="&provData;pmApprovedSRSChange">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;projectManager"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#firstName
 
-:firstName rdf:type owl:DatatypeProperty ,
-                    owl:FunctionalProperty ;
-           
-           rdfs:range xsd:string ;
-           
-           rdfs:domain :contributors .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pmApprovedSRSChangeDate -->
 
+    <owl:DatatypeProperty rdf:about="&provData;pmApprovedSRSChangeDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&provData;projectManager"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#lastName
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#srsChangeDate -->
 
-:lastName rdf:type owl:DatatypeProperty ,
-                   owl:FunctionalProperty ;
-          
-          rdfs:range xsd:string ;
-          
-          rdfs:domain :contributors .
+    <owl:DatatypeProperty rdf:about="&provData;srsChangeDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&provData;developer"/>
+    </owl:DatatypeProperty>
+    
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#srs_Title -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pmApprovedSRS
+    <owl:DatatypeProperty rdf:about="&provData;srs_Title">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&provData;contributors"/>
+    </owl:DatatypeProperty>
+    
 
-:pmApprovedSRS rdf:type owl:DatatypeProperty ,
-                        owl:FunctionalProperty ;
-               
-               rdfs:range xsd:string ;
-               
-               rdfs:domain :projectManager .
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pmApprovedSRSChange
 
-:pmApprovedSRSChange rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     
-                     rdfs:range xsd:string ;
-                     
-                     rdfs:domain :projectManager .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#contributors -->
 
+    <owl:Class rdf:about="&provData;contributors"/>
+    
 
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pmApprovedSRSChangeDate
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer -->
 
-:pmApprovedSRSChangeDate rdf:type owl:DatatypeProperty ,
-                                  owl:FunctionalProperty ;
-                         
-                         rdfs:range xsd:dateTime ;
-                         
-                         rdfs:domain :projectManager .
+    <owl:Class rdf:about="&provData;customer">
+        <rdfs:subClassOf rdf:resource="&provData;contributors"/>
+    </owl:Class>
+    
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developer -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#srsChangeDate
+    <owl:Class rdf:about="&provData;developer">
+        <rdfs:subClassOf rdf:resource="&provData;contributors"/>
+    </owl:Class>
+    
 
-:srsChangeDate rdf:type owl:DatatypeProperty ,
-                        owl:FunctionalProperty ;
-               
-               rdfs:range xsd:dateTime ;
-               
-               rdfs:domain :developer .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#projectManager -->
 
+    <owl:Class rdf:about="&provData;projectManager">
+        <rdfs:subClassOf rdf:resource="&provData;contributors"/>
+    </owl:Class>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#srs_Title
 
-:srs_Title rdf:type owl:DatatypeProperty ,
-                    owl:FunctionalProperty ;
-           
-           rdfs:range xsd:string ;
-           
-           rdfs:domain :contributors .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#srs -->
 
+    <owl:Class rdf:about="&provData;srs"/>
+    
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
 
-#################################################################
-#
-#    Classes
-#
-#################################################################
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer01 -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#contributors
+    <owl:NamedIndividual rdf:about="&provData;customer01">
+        <rdf:type rdf:resource="&provData;customer"/>
+        <changeProposeDate rdf:datatype="&xsd;dateTime">2021-03-10</changeProposeDate>
+        <customerproposedChange rdf:datatype="&xsd;string">Add feedback form</customerproposedChange>
+        <lastName rdf:datatype="&xsd;string">Ambreen</lastName>
+        <firstName rdf:datatype="&xsd;string">Komal</firstName>
+        <custProposeSRS rdf:datatype="&xsd;string">Nisa Cosmetics</custProposeSRS>
+        <custApproveSRS rdf:datatype="&xsd;string">Nisa Cosmetics</custApproveSRS>
+        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
+        <designation rdf:datatype="&xsd;string">customer</designation>
+        <cust_wasAttributedTo rdf:resource="&provData;customer01"/>
+    </owl:NamedIndividual>
+    
 
-:contributors rdf:type owl:Class .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer02 -->
 
+    <owl:NamedIndividual rdf:about="&provData;customer02">
+        <rdf:type rdf:resource="&provData;customer"/>
+        <customerproposedChange rdf:datatype="&xsd;string">1: Add Career Tab</customerproposedChange>
+        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-10-23</customerProposedChangeDate>
+        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-11-01</customerProposedChangeDate>
+        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-11-04 </customerProposedChangeDate>
+        <customerproposedChange rdf:datatype="&xsd;string">2: Add the career tab an form </customerproposedChange>
+        <customerproposedChange rdf:datatype="&xsd;string">3: Include the sidebar in website.</customerproposedChange>
+        <firstName rdf:datatype="&xsd;string">Alina</firstName>
+        <custApproveSRS rdf:datatype="&xsd;string">Glam Furniture</custApproveSRS>
+        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
+        <custProposeSRS rdf:datatype="&xsd;string">Glam Furniture</custProposeSRS>
+        <designation rdf:datatype="&xsd;string">customer</designation>
+        <lastName rdf:datatype="&xsd;string">fatima</lastName>
+        <cust_wasAttributedTo rdf:resource="&provData;customer02"/>
+    </owl:NamedIndividual>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer
 
-:customer rdf:type owl:Class ;
-          
-          rdfs:subClassOf :contributors .
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#develope02 -->
 
+    <owl:NamedIndividual rdf:about="&provData;develope02">
+        <rdf:type rdf:resource="&provData;developer"/>
+        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-03-15</changeMadeDate>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">Add feedback form</changeMadeByDeveloper>
+        <lastName rdf:datatype="&xsd;string">Adil</lastName>
+        <designation rdf:datatype="&xsd;string">Developer</designation>
+        <firstName rdf:datatype="&xsd;string">Maryum</firstName>
+        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
+        <developer_wasAttributedTo rdf:resource="&provData;develope02"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developer
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developer01 -->
 
-:developer rdf:type owl:Class ;
-           
-           rdfs:subClassOf :contributors .
+    <owl:NamedIndividual rdf:about="&provData;developer01">
+        <rdf:type rdf:resource="&provData;developer"/>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">1: Add career Tab</changeMadeByDeveloper>
+        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-10-25</changeMadeDate>
+        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-10-26</changeMadeDate>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">2: Add table</changeMadeByDeveloper>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">3: Adding log0</changeMadeByDeveloper>
+        <changeReason rdf:datatype="&xsd;string">Customer demand for the addition of career tab in website.</changeReason>
+        <designation rdf:datatype="&xsd;string">Developer</designation>
+        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
+        <srs_Title rdf:datatype="&xsd;string">Glam Furnniture</srs_Title>
+        <changeReason rdf:datatype="&xsd;string">Logo was in dark color so the customer want to change it.</changeReason>
+        <firstName rdf:datatype="&xsd;string">Rana</firstName>
+        <lastName rdf:datatype="&xsd;string">Tahir</lastName>
+        <changeReason rdf:datatype="&xsd;string">The customer demand table of about us page.</changeReason>
+        <developer_wasAttributedTo rdf:resource="&provData;developer01"/>
+    </owl:NamedIndividual>
+    
 
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm01 -->
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#projectManager
+    <owl:NamedIndividual rdf:about="&provData;pm01">
+        <rdf:type rdf:resource="&provData;projectManager"/>
+        <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2020-10-24</pmApprovedSRSChangeDate>
+        <pmApprovedSRSChange rdf:datatype="&xsd;string">Add career Tab</pmApprovedSRSChange>
+        <firstName rdf:datatype="&xsd;string">Aqib</firstName>
+        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
+        <pmApprovedSRS rdf:datatype="&xsd;string">Glam Furniture</pmApprovedSRS>
+        <designation rdf:datatype="&xsd;string">Project Manager</designation>
+        <lastName rdf:datatype="&xsd;string">mehmood</lastName>
+        <pm_wasAttributedTo rdf:resource="&provData;pm01"/>
+    </owl:NamedIndividual>
+    
 
-:projectManager rdf:type owl:Class ;
-                
-                rdfs:subClassOf :contributors .
 
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm02 -->
 
+    <owl:NamedIndividual rdf:about="&provData;pm02">
+        <rdf:type rdf:resource="&provData;projectManager"/>
+        <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2021-10-5</pmApprovedSRSChangeDate>
+        <pmApprovedSRSChange rdf:datatype="&xsd;string">Add feedback form</pmApprovedSRSChange>
+        <firstName rdf:datatype="&xsd;string">Junaid</firstName>
+        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
+        <pmApprovedSRS rdf:datatype="&xsd;string">Nisa Cosmetics</pmApprovedSRS>
+        <designation rdf:datatype="&xsd;string">Project Manager</designation>
+        <lastName rdf:datatype="&xsd;string">ali</lastName>
+        <pm_wasAttributedTo rdf:resource="&provData;pm02"/>
+    </owl:NamedIndividual>
+    
 
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#srs
 
-:srs rdf:type owl:Class .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&provData;customer"/>
+            <rdf:Description rdf:about="&provData;developer"/>
+            <rdf:Description rdf:about="&provData;projectManager"/>
+            <rdf:Description rdf:about="&provData;srs"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
 
 
 
-
-#################################################################
-#
-#    Individuals
-#
-#################################################################
-
-
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer01
-
-:customer01 rdf:type owl:NamedIndividual ,
-                     :customer ;
-            
-            :changeProposeDate "2021-03-10"^^xsd:dateTime ;
-            
-            :customerproposedChange "Add feedback form"^^xsd:string ;
-            
-            :lastName "Ambreen"^^xsd:string ;
-            
-            :firstName "Komal"^^xsd:string ;
-            
-            :custProposeSRS "Nisa Cosmetics"^^xsd:string ;
-            
-            :custApproveSRS "Nisa Cosmetics"^^xsd:string ;
-            
-            :srs_Title "Nisa Cosmetics"^^xsd:string ;
-            
-            :designation "customer"^^xsd:string ;
-            
-            :cust_wasAttributedTo :customer01 .
-
-
-
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer02
-
-:customer02 rdf:type owl:NamedIndividual ,
-                     :customer ;
-            
-            :customerproposedChange "1: Add Career Tab"^^xsd:string ;
-            
-            :customerProposedChangeDate "2020-10-23"^^xsd:dateTime ,
-                                        "2020-11-01"^^xsd:dateTime ,
-                                        "2020-11-04 "^^xsd:dateTime ;
-            
-            :customerproposedChange "2: Add the career tab an form "^^xsd:string ,
-                                    "3: Include the sidebar in website."^^xsd:string ;
-            
-            :firstName "Alina"^^xsd:string ;
-            
-            :custApproveSRS "Glam Furniture"^^xsd:string ;
-            
-            :srs_Title "Glam Furniture"^^xsd:string ;
-            
-            :custProposeSRS "Glam Furniture"^^xsd:string ;
-            
-            :designation "customer"^^xsd:string ;
-            
-            :lastName "fatima"^^xsd:string ;
-            
-            :cust_wasAttributedTo :customer02 .
-
-
-
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#develope02
-
-:develope02 rdf:type owl:NamedIndividual ,
-                     :developer ;
-            
-            :changeMadeDate "2020-03-15"^^xsd:dateTime ;
-            
-            :changeMadeByDeveloper "Add feedback form"^^xsd:string ;
-            
-            :lastName "Adil"^^xsd:string ;
-            
-            :designation "Developer"^^xsd:string ;
-            
-            :firstName "Maryum"^^xsd:string ;
-            
-            :srs_Title "Nisa Cosmetics"^^xsd:string ;
-            
-            :developer_wasAttributedTo :develope02 .
-
-
-
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developer01
-
-:developer01 rdf:type owl:NamedIndividual ,
-                      :developer ;
-             
-             :changeMadeByDeveloper "1: Add career Tab"^^xsd:string ;
-             
-             :changeMadeDate "2020-10-25"^^xsd:dateTime ,
-                             "2020-10-26"^^xsd:dateTime ;
-             
-             :changeMadeByDeveloper "2: Add table"^^xsd:string ,
-                                    "3: Adding log0"^^xsd:string ;
-             
-             :changeReason "Customer demand for the addition of career tab in website."^^xsd:string ;
-             
-             :designation "Developer"^^xsd:string ;
-             
-             :srs_Title "Glam Furniture"^^xsd:string ,
-                        "Glam Furnniture"^^xsd:string ;
-             
-             :changeReason "Logo was in dark color so the customer want to change it."^^xsd:string ;
-             
-             :firstName "Rana"^^xsd:string ;
-             
-             :lastName "Tahir"^^xsd:string ;
-             
-             :changeReason "The customer demand table of about us page."^^xsd:string ;
-             
-             :developer_wasAttributedTo :developer01 .
-
-
-
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm01
-
-:pm01 rdf:type owl:NamedIndividual ,
-               :projectManager ;
-      
-      :pmApprovedSRSChangeDate "2020-10-24"^^xsd:dateTime ;
-      
-      :pmApprovedSRSChange "Add career Tab"^^xsd:string ;
-      
-      :firstName "Aqib"^^xsd:string ;
-      
-      :srs_Title "Glam Furniture"^^xsd:string ;
-      
-      :pmApprovedSRS "Glam Furniture"^^xsd:string ;
-      
-      :designation "Project Manager"^^xsd:string ;
-      
-      :lastName "mehmood"^^xsd:string ;
-      
-      :pm_wasAttributedTo :pm01 .
-
-
-
-###  https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm02
-
-:pm02 rdf:type owl:NamedIndividual ,
-               :projectManager ;
-      
-      :pmApprovedSRSChangeDate "2021-10-5"^^xsd:dateTime ;
-      
-      :pmApprovedSRSChange "Add feedback form"^^xsd:string ;
-      
-      :firstName "Junaid"^^xsd:string ;
-      
-      :srs_Title "Nisa Cosmetics"^^xsd:string ;
-      
-      :pmApprovedSRS "Nisa Cosmetics"^^xsd:string ;
-      
-      :designation "Project Manager"^^xsd:string ;
-      
-      :lastName "ali"^^xsd:string ;
-      
-      :pm_wasAttributedTo :pm02 .
-
-
-
-
-
-#################################################################
-#
-#    General axioms
-#
-#################################################################
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :customer
-                :developer
-                :projectManager
-                :srs
-              )
-] .
-
-
-
-
-###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
