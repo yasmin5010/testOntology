@@ -4,6 +4,7 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY provData "https://github.com/yasmin5010/testOntology/blob/master/provData.owl#" >
@@ -16,7 +17,8 @@
      xmlns:provData="https://github.com/yasmin5010/testOntology/blob/master/provData.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
     <owl:Ontology rdf:about="https://github.com/yasmin5010/testOntology/blob/master/provData.owl"/>
     
 
@@ -61,16 +63,6 @@
     
 
 
-    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#was_GeneratedBy -->
-
-    <owl:ObjectProperty rdf:about="&provData;was_GeneratedBy">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:range rdf:resource="&provData;contributors"/>
-        <rdfs:domain rdf:resource="&provData;srs"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -98,16 +90,6 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
         <rdfs:domain rdf:resource="&provData;developer"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#changeProposeDate -->
-
-    <owl:DatatypeProperty rdf:about="&provData;changeProposeDate">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
-        <rdfs:domain rdf:resource="&provData;customer"/>
     </owl:DatatypeProperty>
     
 
@@ -310,77 +292,38 @@
     
 
 
-    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer01 -->
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#cust01 -->
 
-    <owl:NamedIndividual rdf:about="&provData;customer01">
+    <owl:NamedIndividual rdf:about="&provData;cust01">
         <rdf:type rdf:resource="&provData;customer"/>
-        <changeProposeDate rdf:datatype="&xsd;dateTime">2021-03-10</changeProposeDate>
-        <customerproposedChange rdf:datatype="&xsd;string">Add feedback form</customerproposedChange>
-        <lastName rdf:datatype="&xsd;string">Ambreen</lastName>
-        <firstName rdf:datatype="&xsd;string">Komal</firstName>
-        <custProposeSRS rdf:datatype="&xsd;string">Nisa Cosmetics</custProposeSRS>
-        <custApproveSRS rdf:datatype="&xsd;string">Nisa Cosmetics</custApproveSRS>
-        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
-        <designation rdf:datatype="&xsd;string">customer</designation>
-        <cust_wasAttributedTo rdf:resource="&provData;customer01"/>
+        <customerproposedChange rdf:datatype="&xsd;string">1: Change the logo designation</customerproposedChange>
+        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-12--2</customerProposedChangeDate>
+        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-12-02</customerProposedChangeDate>
+        <customerproposedChange rdf:datatype="&xsd;string">2: Add Feedback Form</customerproposedChange>
+        <designation rdf:datatype="&xsd;string">Customer</designation>
+        <custApproveSRS rdf:datatype="&xsd;string">Eshopping</custApproveSRS>
+        <custProposeSRS rdf:datatype="&xsd;string">Eshopping</custProposeSRS>
+        <srs_Title rdf:datatype="&xsd;string">Eshopping</srs_Title>
+        <lastName rdf:datatype="&xsd;string">Rehman</lastName>
+        <firstName rdf:datatype="&xsd;string">Saif</firstName>
+        <cust_wasAttributedTo rdf:resource="&provData;cust01"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#customer02 -->
+    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#dev01 -->
 
-    <owl:NamedIndividual rdf:about="&provData;customer02">
-        <rdf:type rdf:resource="&provData;customer"/>
-        <customerproposedChange rdf:datatype="&xsd;string">1: Add Career Tab</customerproposedChange>
-        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-10-23</customerProposedChangeDate>
-        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-11-01</customerProposedChangeDate>
-        <customerProposedChangeDate rdf:datatype="&xsd;dateTime">2020-11-04 </customerProposedChangeDate>
-        <customerproposedChange rdf:datatype="&xsd;string">2: Add the career tab an form </customerproposedChange>
-        <customerproposedChange rdf:datatype="&xsd;string">3: Include the sidebar in website.</customerproposedChange>
-        <firstName rdf:datatype="&xsd;string">Alina</firstName>
-        <custApproveSRS rdf:datatype="&xsd;string">Glam Furniture</custApproveSRS>
-        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
-        <custProposeSRS rdf:datatype="&xsd;string">Glam Furniture</custProposeSRS>
-        <designation rdf:datatype="&xsd;string">customer</designation>
-        <lastName rdf:datatype="&xsd;string">fatima</lastName>
-        <cust_wasAttributedTo rdf:resource="&provData;customer02"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#develope02 -->
-
-    <owl:NamedIndividual rdf:about="&provData;develope02">
+    <owl:NamedIndividual rdf:about="&provData;dev01">
         <rdf:type rdf:resource="&provData;developer"/>
-        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-03-15</changeMadeDate>
-        <changeMadeByDeveloper rdf:datatype="&xsd;string">Add feedback form</changeMadeByDeveloper>
-        <lastName rdf:datatype="&xsd;string">Adil</lastName>
+        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-12-5</changeMadeDate>
         <designation rdf:datatype="&xsd;string">Developer</designation>
-        <firstName rdf:datatype="&xsd;string">Maryum</firstName>
-        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
-        <developer_wasAttributedTo rdf:resource="&provData;develope02"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#developer01 -->
-
-    <owl:NamedIndividual rdf:about="&provData;developer01">
-        <rdf:type rdf:resource="&provData;developer"/>
-        <changeMadeByDeveloper rdf:datatype="&xsd;string">1: Add career Tab</changeMadeByDeveloper>
-        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-10-25</changeMadeDate>
-        <changeMadeDate rdf:datatype="&xsd;dateTime">2020-10-26</changeMadeDate>
-        <changeMadeByDeveloper rdf:datatype="&xsd;string">2: Add table</changeMadeByDeveloper>
-        <changeMadeByDeveloper rdf:datatype="&xsd;string">3: Adding log0</changeMadeByDeveloper>
-        <changeReason rdf:datatype="&xsd;string">Customer demand for the addition of career tab in website.</changeReason>
-        <designation rdf:datatype="&xsd;string">Developer</designation>
-        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
-        <srs_Title rdf:datatype="&xsd;string">Glam Furnniture</srs_Title>
-        <changeReason rdf:datatype="&xsd;string">Logo was in dark color so the customer want to change it.</changeReason>
-        <firstName rdf:datatype="&xsd;string">Rana</firstName>
-        <lastName rdf:datatype="&xsd;string">Tahir</lastName>
-        <changeReason rdf:datatype="&xsd;string">The customer demand table of about us page.</changeReason>
-        <developer_wasAttributedTo rdf:resource="&provData;developer01"/>
+        <srs_Title rdf:datatype="&xsd;string">Eshopping</srs_Title>
+        <changeReason rdf:datatype="&xsd;string">Feedback tab addition</changeReason>
+        <firstName rdf:datatype="&xsd;string">Irfan </firstName>
+        <changeMadeByDeveloper rdf:datatype="&xsd;string">Irfan Khan</changeMadeByDeveloper>
+        <lastName rdf:datatype="&xsd;string">Khan</lastName>
+        <changeReason rdf:datatype="&xsd;string">Logo was not good according to customer</changeReason>
+        <developer_wasAttributedTo rdf:resource="&provData;dev01"/>
     </owl:NamedIndividual>
     
 
@@ -389,30 +332,15 @@
 
     <owl:NamedIndividual rdf:about="&provData;pm01">
         <rdf:type rdf:resource="&provData;projectManager"/>
-        <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2020-10-24</pmApprovedSRSChangeDate>
-        <pmApprovedSRSChange rdf:datatype="&xsd;string">Add career Tab</pmApprovedSRSChange>
-        <firstName rdf:datatype="&xsd;string">Aqib</firstName>
-        <srs_Title rdf:datatype="&xsd;string">Glam Furniture</srs_Title>
-        <pmApprovedSRS rdf:datatype="&xsd;string">Glam Furniture</pmApprovedSRS>
+        <pmApprovedSRSChange rdf:datatype="&xsd;string">1: Logo design change</pmApprovedSRSChange>
+        <pmApprovedSRSChangeDate rdf:datatype="&xsd;string">2020-12-04</pmApprovedSRSChangeDate>
+        <firstName rdf:datatype="&xsd;string">Abdul</firstName>
+        <pmApprovedSRSChange rdf:datatype="&xsd;string">Addition of feedback form accepted</pmApprovedSRSChange>
+        <pmApprovedSRS rdf:datatype="&xsd;string">Eshopping</pmApprovedSRS>
+        <srs_Title rdf:datatype="&xsd;string">Eshopping</srs_Title>
         <designation rdf:datatype="&xsd;string">Project Manager</designation>
-        <lastName rdf:datatype="&xsd;string">mehmood</lastName>
+        <lastName rdf:datatype="&xsd;string">Rehman</lastName>
         <pm_wasAttributedTo rdf:resource="&provData;pm01"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/yasmin5010/testOntology/blob/master/provData.owl#pm02 -->
-
-    <owl:NamedIndividual rdf:about="&provData;pm02">
-        <rdf:type rdf:resource="&provData;projectManager"/>
-        <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2021-10-5</pmApprovedSRSChangeDate>
-        <pmApprovedSRSChange rdf:datatype="&xsd;string">Add feedback form</pmApprovedSRSChange>
-        <firstName rdf:datatype="&xsd;string">Junaid</firstName>
-        <srs_Title rdf:datatype="&xsd;string">Nisa Cosmetics</srs_Title>
-        <pmApprovedSRS rdf:datatype="&xsd;string">Nisa Cosmetics</pmApprovedSRS>
-        <designation rdf:datatype="&xsd;string">Project Manager</designation>
-        <lastName rdf:datatype="&xsd;string">ali</lastName>
-        <pm_wasAttributedTo rdf:resource="&provData;pm02"/>
     </owl:NamedIndividual>
     
 
