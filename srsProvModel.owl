@@ -346,6 +346,7 @@
         <rdf:type rdf:resource="&srsProvModel;projectManager"/>
         <pmApprovedSRSChange rdf:datatype="&xsd;string">1: Change Logo Design</pmApprovedSRSChange>
         <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2020-12-03</pmApprovedSRSChangeDate>
+        <pmApprovedSRSChange rdf:datatype="&xsd;string">2: add calender for user</pmApprovedSRSChange>
         <srsTitle rdf:datatype="&xsd;string">Afreen Cosmetics</srsTitle>
         <pmApprovedSRS rdf:datatype="&xsd;string">Afreen Cosmetics</pmApprovedSRS>
         <lastName rdf:datatype="&xsd;string">Akram</lastName>
