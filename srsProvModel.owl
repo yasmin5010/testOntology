@@ -294,6 +294,7 @@
         <rdf:type rdf:resource="&srsProvModel;customer"/>
         <custProposedSRSChange rdf:datatype="&xsd;string">1: Add feedback form</custProposedSRSChange>
         <custProposedSRSChangeDate rdf:datatype="&xsd;dateTime">2021-01-15</custProposedSRSChangeDate>
+        <custProposedSRSChange rdf:datatype="&xsd;string">2: Add calender to user dashboard</custProposedSRSChange>
         <firstName rdf:datatype="&xsd;string">Alishba</firstName>
         <designation rdf:datatype="&xsd;string">Customer</designation>
         <lastName rdf:datatype="&xsd;string">Fatima</lastName>
@@ -327,6 +328,8 @@
         <rdf:type rdf:resource="&srsProvModel;developer"/>
         <changeReason rdf:datatype="&xsd;string">1: feedback from user is required</changeReason>
         <ChangeMadeDate rdf:datatype="&xsd;dateTime">2021-01-16</ChangeMadeDate>
+        <ChangeMadeDate rdf:datatype="&xsd;dateTime">2021-01-17</ChangeMadeDate>
+        <ChangeMadeDate rdf:datatype="&xsd;string">2: Addition of calender for user</ChangeMadeDate>
         <designation rdf:datatype="&xsd;string">Developer</designation>
         <firstName rdf:datatype="&xsd;string">Irfan</firstName>
         <changeMadeByDeveloper rdf:datatype="&xsd;string">Irfan khan</changeMadeByDeveloper>
@@ -359,6 +362,7 @@
         <rdf:type rdf:resource="&srsProvModel;projectManager"/>
         <pmApprovedSRSChange rdf:datatype="&xsd;string">1: Add feedback form</pmApprovedSRSChange>
         <pmApprovedSRSChangeDate rdf:datatype="&xsd;dateTime">2021-01-16</pmApprovedSRSChangeDate>
+        <pmApprovedSRSChange rdf:datatype="&xsd;string">2: calender addition for user</pmApprovedSRSChange>
         <lastName rdf:datatype="&xsd;string">Mehmood</lastName>
         <designation rdf:datatype="&xsd;string">Project Manager</designation>
         <firstName rdf:datatype="&xsd;string">Shahzaib</firstName>
